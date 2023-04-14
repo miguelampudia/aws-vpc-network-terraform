@@ -23,6 +23,11 @@ variable "node_role_name" {
   type        = string
 }
 
+variable "node_instance_types" {
+  description = "Assign node_instance_types"
+  type        = string
+}
+
 variable "region_name" {
   description = "Region name to launch VPC network"
   type        = string

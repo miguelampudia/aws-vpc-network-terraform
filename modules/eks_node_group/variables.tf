@@ -21,6 +21,11 @@ variable "nodegroup_keypair" {
   type        = string
 }
 
+variable "node_instance_types" {
+  description = "Assign node_instance_types"
+  type        = string
+}
+
 variable "eks_cluster_name" {
   description = "Name of EKS Cluster, pulled from eks_cluster module"
   type        = string
@@ -30,3 +35,4 @@ variable "eks_subnet_ids" {
   description = "List subnet ids on which EKS Cluster to be launched"
   type        = list(string)
 }
+

@@ -1,7 +1,7 @@
 resource "aws_eks_node_group" "ubuntu_22_ngp" {
   cluster_name    = var.eks_cluster_name
   node_group_name = var.node_group_name
-  instance_types = "t2.micro"
+  instance_types = var.node_instance_types
 
   remote_access {
     ec2_ssh_key = aws_key_pair.node_ssh_key.key_name
