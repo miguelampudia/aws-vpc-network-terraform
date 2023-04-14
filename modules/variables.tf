@@ -25,7 +25,7 @@ variable "node_role_name" {
 
 variable "node_instance_types" {
   description = "Assign node_instance_types"
-  type        = string
+  type        = list(string)
 }
 
 variable "region_name" {

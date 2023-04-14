@@ -23,7 +23,7 @@ variable "nodegroup_keypair" {
 
 variable "node_instance_types" {
   description = "Assign node_instance_types"
-  type        = string
+  type        = list(string)
 }
 
 variable "eks_cluster_name" {
