@@ -11,13 +11,13 @@ resource "aws_eks_node_group" "ubuntu_22_ngp" {
   subnet_ids    = var.eks_subnet_ids
 
   scaling_config {
-    desired_size = 3
+    desired_size = 1
     max_size     = 4
     min_size     = 1
   }
 
   update_config {
-    max_unavailable = 2
+    max_unavailable = 1
   }
 
   depends_on = [
