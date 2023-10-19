@@ -14,7 +14,7 @@
 #  protocol          = "TCP"
 #  cidr_blocks       = ["0.0.0.0/0"]
 #  security_group_id = aws_security_group.default_group.id
-3}
+#}
 
 resource "aws_security_group_rule" "default_egress_rule" {
   type              = "egress"
