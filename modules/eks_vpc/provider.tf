@@ -10,10 +10,10 @@
 provider "aws" {
   region = var.region_name
 
-  default_tags {
-    tags = {
-      "Application" = "EKS-Cluster"
-      "Tool"        = "Terragrunt-managed-resource"
-    }
-  }
+  #default_tags {
+  #  tags = {
+  #    #"Application" = "EKS-Cluster"
+  #    #"Tool"        = "Terragrunt-managed-resource"
+  #  }
+  #}
 }
