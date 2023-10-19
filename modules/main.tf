@@ -1,3 +1,8 @@
+# Provider configuration for AWS.
+provider "aws" {
+  region = var.region_name
+}
+
 module "eks_vpc" {
   source = "./eks_vpc"
 
