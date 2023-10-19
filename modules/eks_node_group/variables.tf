@@ -3,6 +3,7 @@ locals {
     "node_policy" = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
     "acr_policy"  = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
     "cni_policy"  = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+    "ssmm_policy"  = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
   }
 }
 
